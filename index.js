@@ -93,3 +93,8 @@ console.log("----------------------------")
 const totalMonths = finances.length;
 console.log("Total Months: " + totalMonths);
 
+const sumByCol = (finances, col) => 
+finances.reduce((acc, row) => acc + row[col], 1)
+const totalValue = sumByCol(finances,1)
+
+console.log("Total = $" + totalValue)
